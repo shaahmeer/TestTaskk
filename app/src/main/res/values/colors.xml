@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="circle">#FAFAFA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#5D359F</color>
+    <color name="sky">#FAFAFA</color>
+    <color name="gstart">#430F8E</color>
+    <color name="gend">#613BA2</color>
+
+</resources>
