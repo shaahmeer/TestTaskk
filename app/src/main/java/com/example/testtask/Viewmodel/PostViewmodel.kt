@@ -2,7 +2,6 @@ package com.example.testtask.Viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.example.testtask.R
-import com.example.testtask.model.HotelItem
 import com.example.testtask.model.Postmodel
 
 class PostViewmodel : ViewModel() {
@@ -10,7 +9,6 @@ class PostViewmodel : ViewModel() {
     private val postlist = ArrayList<Postmodel>()
 
     init {
-        // Initialize your ticketList with data here
         for (i in 1..20) {
             postlist.add(
                 Postmodel(
@@ -23,7 +21,7 @@ class PostViewmodel : ViewModel() {
                     80,
                     5
                 )
-            )
+            );
             postlist.add(
                 Postmodel(
                     R.drawable.postbackground,

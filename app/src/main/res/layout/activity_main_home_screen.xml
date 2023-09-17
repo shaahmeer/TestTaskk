@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainHomeScreen">
+    tools:context=".MainHomeScreen"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/navbc">
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        app:menu="@menu/menu_item"
+        app:headerLayout="@layout/nav_header"/>
+/>
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         >
 
 
@@ -19,7 +36,7 @@
         android:background="@drawable/hometopbar" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/navbutton"
         android:layout_width="40dp"
         android:layout_height="40dp"
 
@@ -41,7 +58,7 @@
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
         app:layout_constraintHorizontal_bias="0.332"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/navbutton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -78,7 +95,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.101"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+            app:layout_constraintTop_toBottomOf="@+id/navbutton" />
 
         <TextView
         android:id="@+id/textView8"
@@ -173,7 +190,21 @@
         app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toEndOf="@+id/Posts"
         app:layout_constraintTop_toBottomOf="@+id/recycleviewhotel" />
+
+
+
+
+
+
+
+
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
 
 
